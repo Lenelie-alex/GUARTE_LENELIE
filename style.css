@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0%;
+    font-family: sans-serif
+
+}
+.main{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   background: linear-gradient(rgba(76, 214, 58, 0.75),rgba(28, 100, 13, 0.75),rgb(24, 211, 49));   
+    
+}
+nav{
+   display: flex;
+   width: 84%;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: beige;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:rgb(14, 107, 38);
+    background: whitesmoke;
+
+}
+.logo{
+    float: left;
+    width: 100px;
+    height: 200%;
+ 
+    
+
+}
+
+
+.title{
+    position: absolute;
+    top: 44%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    transition: 0.5 ease-in-out
+   
+}
+.title h1{
+    color: transparent;
+    -webkit-text-stroke: 3px beige;
+    font-size: 100px;
+    font-family: cursive;
+}
+.title h1::before{
+    position: absolute;
+    content: "WELCOME!";
+    width: 0%;
+    height: 80%;
+    overflow: hidden;
+    color: beige;
+    border-right: 8px solid beige;
+    transition: 1s ease-in-out
+}
+.title h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px beige);
+
+}
+.title p{
+    font-family: cursive;
+    color: beige;
+    left: 45%;
+   font-size: 200%;
+}
+
+.gallery{
+    background-image:linear-gradient(rgba(76, 214, 58, 0.75),rgba(28, 100, 13, 0.75),rgb(24, 211, 49));
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition:  ease-in-out
+    
+}
+.hero h1{
+    color: transparent;
+    -webkit-text-stroke: 3px beige;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.hero h1::before{
+    position: absolute;
+    content: "MY GALLERY";
+    width: 0%;
+    height: 80%;
+    overflow: hidden;
+    color: beige;
+    border-right: 8px solid beige;
+    transition: 1S 1s ease-in-out
+}
+
+.hero h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px beige);
+}
+    .alex{
+    width: 700px;
+    margin: 5px;
+    float: center;
+    background:rgb(33, 44, 143);
+    border-radius: 10px;
+   
+
+}
+.gallerycontainer{
+    width: 100px ;
+    margin: 50px;
+    background: #000000;
+    
+   
+ 
+}
+.alex-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+
+
+}
+.alex{
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.alex img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+
+}
+/* .alex img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height:50%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+} */
+.alex:hover .image {
+    opacity: 0.3;
+  }
+  
+  
+  
+
+.background{
+    background-image:linear-gradient(rgba(76, 214, 58, 0.75),rgba(28, 100, 13, 0.75),rgb(24, 211, 49));
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.me{
+    background-image:linear-gradient(rgba(76, 214, 58, 0.75),rgba(28, 100, 13, 0.75),rgb(24, 211, 49));
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.logo1{
+    float: left;
+    width: 100px;
+    height: 200%;
+
+}
+.about{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5 ease-in-out
+
+}
+.about h1{
+    color: transparent;
+    -webkit-text-stroke: 3px beige;
+    font-size: 50px;
+    font-family: cursive;
+
+}
+.about h1::before{
+    position: absolute;
+    content: "GET TO KNOW ME!";
+    width: 0%;
+    height: 90%;
+    overflow: hidden;
+    color: beige;
+    border-right: 8px solid beige;
+    transition: 1S 1s ease-in-out
+}
+.about h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px beige);
+}
+
+.aboutme {
+    top: 40%;
+    left: 40%;
+    position: absolute;
+}
+.aboutme p{
+    font-size: 18px;
+    font-family: script;
+    color: beige;
+}
+.aboutme p:hover{
+    color: black;
+
+}
+
+.logo2{
+    float: left;
+    width: 100px;
+    height: 200%;
+}
+.logo3{
+    float: left;
+    width: 100px;
+    height: 200%;
+}
+.form{
+    position: absolute;
+   top: 55%;
+   left: 40%;
+   transform: translate(-50%,-50%);
+   width: 150px;
+}
+input{
+    font-size: 16px;
+    padding: 15px 10px;
+    width: 300%;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 25px;
+    
+}
+
+
+
+input, button{
+    outline: none;
+    border: 2px solid rgb(57, 63, 57);
+
+}
+input:focus, button:focus{
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+    border: 2px solid rgb(57, 63, 57);
+}
+::placeholder{
+    color: rgb(27, 133, 6);
+    opacity: 1;
+}
+:-ms-input-placeholder{
+    color: rgb(27, 133, 6);
+    opacity: 1;
+}
+.form button{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(27, 133, 6);
+
+}
+
+.ponce{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5 ease-in-out
+    
+
+}
+.ponce h1{
+    color: transparent;
+    -webkit-text-stroke: 3px beige;
+    font-size: 50px;
+    font-family: cursive;
+}
+.ponce h1::before{
+    position: absolute;
+    content: "CONNECT WITH ME!";
+    width: 0%;
+    height: 90%;
+    overflow: hidden;
+    color: beige;
+    border-right: 8px solid beige;
+    transition: 1s ease-in-out
+}
+.ponce h1:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px beige);
+
+}
+.image1{
+    margin-left: 10rem;
+    position: relative;
+    padding-top: 5.2%;
+}
+
+
+
+
